@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+</head>
+<body>
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <p class="h5 my-0 me-md-auto fw-normal">Dog Company</p>
+  <nav class="my-2 my-md-0 me-md-3">
+
+    <a class="p-2 text-dark" href="{% url 'pes' %}">pogulat s maslovoi</a>
+    <a class="p-2 text-dark" href="{% url 'dog' %}">kurs na skillbox</a>
+    <a class="p-2 text-dark" href="{% url 'pidor' %}">podkatit k maslovoi</a>
+    <a class="p-2 text-dark" href="{% url 'sobaka' %}">bust na abbadone</a>
+    <a class="btn btn-outline-danger" href="{% url 'create' %}">napisat huinyu</a>
+    <a class="p-2 text-dark" href="{% url 'about' %}">about</a>
+    <a class="p-2 text-dark" href="{% url 'main' %}">main</a>
+  </nav>
+  <a class="btn btn-outline-primary" href="https://discord.gg/KYdymF54" target=»_blank»>zaletet v ds</a>
+  <a class="btn btn-outline-primary" href="#">vyletet' iz ds</a>
+</header>
+  <div class="container">
+    {% block content %}{% endblock %}
+  <div/>
+</body>
+</html>
