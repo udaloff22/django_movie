@@ -117,7 +117,7 @@ class MovieShots(models.Model):
 
 
 class RatingStar(models.Model):
-    """Rating stars"""
+    """rating stars"""
     value = models.SmallIntegerField('Currency', default=0)
 
     def __str__(self):
